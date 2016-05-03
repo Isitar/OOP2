@@ -19,11 +19,11 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class FileRepository {
+public class MovieFileRepository implements MovieModel {
 
-	private List<MovieInterface> data;
+	private List<Movie> data;
 
-	public List<MovieInterface> getData() {
+	public List<Movie> getData() {
 		return getData(getClass().getResourceAsStream("movies.csv"));
 	}
 
@@ -34,7 +34,7 @@ public class FileRepository {
 	 *            the name of the given file
 	 * @return the election results
 	 */
-	public List<MovieInterface> getData(String path) {
+	public List<Movie> getData(String path) {
 		try {
 			return getData(new FileInputStream(path));
 		} catch (FileNotFoundException ex) {
@@ -50,7 +50,7 @@ public class FileRepository {
 	 *            the InputStream to read from
 	 * @return the election results
 	 */
-	public List<MovieInterface> getData(InputStream inputSream) {
+	public List<Movie> getData(InputStream inputSream) {
 
 		data = new ArrayList<>();
 		try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputSream, "UTF-8"))) {
