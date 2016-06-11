@@ -22,6 +22,10 @@ public class Movie {
 	private SimpleObjectProperty<Date> startDate;
 	private IntegerProperty numberOfOscars;
 
+	public Movie() {
+
+	}
+
 	public Movie(IntegerProperty id, StringProperty title, IntegerProperty yearOfAward, StringProperty director,
 			StringProperty mainActor, StringProperty titleEnglish, IntegerProperty yearOfProduction,
 			StringProperty country, IntegerProperty duration, IntegerProperty fsk, StringProperty genre,
@@ -152,5 +156,10 @@ public class Movie {
 				+ yearOfProduction + " " + country + " " + duration + " " + fsk + " " + genre + " " + startDate + " "
 				+ numberOfOscars;
 
+	}
+
+	public static Movie copy(Movie m) {
+		return new Movie(m.id, m.title, m.yearOfAward, m.director, m.mainActor, m.titleEnglish, m.yearOfProduction,
+				m.country, m.duration, m.fsk, m.genre, m.startDate, m.numberOfOscars);
 	}
 }
