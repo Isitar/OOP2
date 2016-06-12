@@ -5,22 +5,23 @@ import java.util.Date;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class Movie {
-	private IntegerProperty id;
-	private StringProperty title;
-	private IntegerProperty yearOfAward;
-	private StringProperty director;
-	private StringProperty mainActor;
-	private StringProperty titleEnglish;
-	private IntegerProperty yearOfProduction;
-	private StringProperty country;
-	private IntegerProperty duration;
-	private IntegerProperty fsk;
-	private StringProperty genre;
-	private SimpleObjectProperty<Date> startDate;
-	private IntegerProperty numberOfOscars;
+	private IntegerProperty id = new SimpleIntegerProperty();
+	private StringProperty title = new SimpleStringProperty();
+	private IntegerProperty yearOfAward = new SimpleIntegerProperty();
+	private StringProperty director = new SimpleStringProperty();
+	private StringProperty mainActor = new SimpleStringProperty();
+	private StringProperty titleEnglish = new SimpleStringProperty();
+	private IntegerProperty yearOfProduction = new SimpleIntegerProperty();
+	private StringProperty country = new SimpleStringProperty();
+	private IntegerProperty duration = new SimpleIntegerProperty();
+	private IntegerProperty fsk = new SimpleIntegerProperty();
+	private StringProperty genre = new SimpleStringProperty();
+	private SimpleObjectProperty<Date> startDate = new SimpleObjectProperty<>();
+	private IntegerProperty numberOfOscars = new SimpleIntegerProperty();
 
 	public Movie() {
 

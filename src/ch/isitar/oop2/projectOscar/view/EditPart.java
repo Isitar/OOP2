@@ -18,7 +18,6 @@ import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.util.Callback;
@@ -121,6 +120,8 @@ public class EditPart extends GridPane {
 	}
 
 	private void Update(Movie m) {
+		if (m == null)
+			return;
 		internalUpdate = true;
 		spnYear.getValueFactory().setValue(m.getYearOfAward().get());
 		txtTitle.setText(m.getTitle().get());
@@ -191,14 +192,18 @@ public class EditPart extends GridPane {
 
 		dpkCinemaStart.setMaxWidth(Double.MAX_VALUE);
 
-		ColumnConstraints cs = new ColumnConstraints();
-		cs.setHgrow(Priority.NEVER);
+		GridPane.setHgrow(spnOscar, Priority.ALWAYS); // grow this column
+		GridPane.setHgrow(dpkCinemaStart, Priority.ALWAYS); // grow this column
 
-		ColumnConstraints cs2 = new ColumnConstraints();
-		cs2.setHgrow(Priority.ALWAYS);
-		getColumnConstraints().addAll(cs, cs2, cs, cs2);
+		// this code has the same effect but also doesn't work properly
+		// ColumnConstraints cs = new ColumnConstraints();
+		// cs.setHgrow(Priority.ALWAYS);
+		//
+		// ColumnConstraints cs2 = new ColumnConstraints();
+		// cs2.setHgrow(Priority.ALWAYS);
+		// getColumnConstraints().addAll(cs, cs2, cs, cs2);
 
-		setStyle("-fx-background-color: red");
+		// setStyle("-fx-background-color: red");
 		setMaxWidth(Double.MAX_VALUE);
 	}
 
@@ -279,6 +284,7 @@ public class EditPart extends GridPane {
 		selectedMovie.addListener((prop, oldV, newV) -> {
 			Update(newV);
 		});
+
 	}
 
 }

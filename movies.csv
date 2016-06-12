@@ -1,0 +1,84 @@
+ID;Title;YearOfAward;Director;MainActor;TitleEnglish;YearOfProduction;Country;Duration;FSK;Genre;StartDate;NumberOfOscars
+0;Broadway Melodyxxx;1929;Harry Beaumont;Anita Page, Bessie Love;The Broadway Melody;1929;US;100;12;Musikfilm;ObjectProperty [value: null];1
+1;Im Westen nichts Neues;1931;Lewis Milestone;Louis Wolheim, Lew Ayres;All Quiet on the Western Front;1930;US;136;12;Drama;ObjectProperty [value: null];1
+2;Pioniere des wilden Westens sssss;1932;Wesley Ruggles;Richard Dix, Irene Dunne;Cimarron;1931;US;123;12;Drama, Western;ObjectProperty [value: null];1
+3;Menschen im Hotel;1933;Edmund Goulding;Greta Garbo, John Barrymore;Grand Hotel;1932;US;110;16;Drama;ObjectProperty [value: null];1
+4;Kavalkade;1934;Frank Lloyd;Diana Wynyard, Clive Brook;Cavalcade;1933;US;110;12;Drama;ObjectProperty [value: null];1
+5;Es geschah in einer Nacht;1935;Frank Capra;Clark Gable, Claudette Colbert;It Happened One Night;1934;US;101;0;Road Movie, Komödie;ObjectProperty [value: null];1
+6;Meuterei auf der Bounty;1936;Frank Lloyd;Charles Laughton, Clark Gable;Mutiny on the Bounty;1935;US;135;12;Abenteuerfilm, Drama, Historienfilm;ObjectProperty [value: null];1
+7;Der große Ziegfeld;1937;Robert Z. Leonard;William Powell, Myrna Loy;The Great Ziegfeld;1936;US;110;12;Drama, Komödie, Musikfilm;ObjectProperty [value: null];1
+8;Das Leben des Emile Zola;1938;William Dieterle;Paul Muni, Gale Sondergaard;The Life of Emile Zola;1937;US;116;12;Drama;ObjectProperty [value: null];1
+9;Lebenskünstler;1939;Frank Capra;Jean Arthur, Lionel Barrymore;You Can't Take It with You;1938;US;121;6;Komödie;ObjectProperty [value: null];1
+10;Vom Winde verweht;1940;George Cukor, Sam Wood;Clark Gable, Vivien Leigh;Gone with the Wind;1939;US;234;12;Drama, Historienfilm;ObjectProperty [value: null];1
+11;Rebecca;1941;Alfred Hitchcock;Laurence Olivier, Joan Fontaine;Rebecca;1940;US;130;16;Drama, Thriller;ObjectProperty [value: null];1
+12;So grün war mein Tal;1942;John Ford;Walter Pidgeon, Maureen O'Hara;How Green Was My Valley;1941;US;117;12;Drama;ObjectProperty [value: null];1
+13;Mrs. Miniver;1943;William Wyler;Greer Garson, Walter Pidgeon;Mrs. Miniver;1942;US;134;12;Drama;ObjectProperty [value: null];1
+14;Casablanca;1944;Michael Curtiz;Humphrey Bogart, Ingrid Bergman;Casablanca;1942;US;102;6;Drama;ObjectProperty [value: null];1
+15;Der Weg zum Glück;1945;Leo McCarey;Bing Crosby, Barry Fitzgerald;Going My Way;1944;US;130;0;Drama, Komödie;ObjectProperty [value: null];1
+16;Das verlorene Wochenende;1946;Billy Wilder;Ray Milland, Jane Wyman;The Lost Weekend;1945;US;101;16;Drama, Kriminalfilm;ObjectProperty [value: null];1
+17;Die besten Jahre unseres Lebens;1947;William Wyler;Myrna Loy, Fredric March;The Best Years of Our Lives;1946;US;172;12;Drama;ObjectProperty [value: null];1
+18;Tabu der Gerechten;1948;Elia Kazan;Gregory Peck, Dorothy McGuire;Gentleman's Agreement;1947;US;117;12;Drama;ObjectProperty [value: null];1
+19;Hamlet;1949;Laurence Olivier;Laurence Olivier, Norman Wooland;Hamlet;1948;GB;150;12;Drama, Thriller;ObjectProperty [value: null];1
+20;Der Mann, der herrschen wollte;1950;Robert Rossen;John Ireland, Broderick Crawford;All the King's Men;1949;US;109;12;Drama;ObjectProperty [value: null];1
+21;Alles über Eva;1951;Joseph L. Mankiewicz;Bette Davis, Anne Baxter;All About Eve;1950;US;138;12;Drama;ObjectProperty [value: null];1
+22;Ein Amerikaner in Paris;1952;Vincente Minnelli;Gene Kelly, Leslie Caron;An American in Paris;1951;US;114;12;Musikfilm, Komödie;ObjectProperty [value: null];1
+23;Die Größte Schau der Welt;1953;Cecil B. DeMille;Betty Hutton, Cornel Wilde;The Greatest Show on Earth;1952;US;150;12;Drama;ObjectProperty [value: null];1
+24;Verdammt in alle Ewigkeit;1954;Fred Zinnemann;Burt Lancaster, Montgomery Clift;From Here to Eternity;1953;US;115;16;Drama;ObjectProperty [value: null];1
+25;Die Faust im Nacken;1955;Elia Kazan;Marlon Brando, Karl Malden;On the Waterfront;1954;US;108;12;Drama;ObjectProperty [value: null];1
+26;Marty;1956;Delbert Mann;Ernest Borgnine, Betsy Blair;Marty;1955;US;86;12;Drama;ObjectProperty [value: null];1
+27;In 80 Tagen um die Welt;1957;Michael Anderson, John Farrow;David Niven, Cantinflas;Around the World in Eighty Days;1956;US;178;6;Abenteuerfilm, Historienfilm, Komödie;ObjectProperty [value: null];1
+28;Die Brücke am Kwai;1958;David Lean;William Holden, Alec Guinness;The Bridge on the River Kwai;1957;GB/US;161;12;Drama;ObjectProperty [value: null];1
+29;Gigi;1959;Vincente Minnelli;Leslie Caron, Maurice Chevalier;Gigi;1958;US;115;16;Komödie, Musikfilm;ObjectProperty [value: null];1
+30;Ben Hur;1960;William Wyler;Charlton Heston, Jack Hawkins;Ben Hur;1959;US;212;16;Historienfilm, Drama;ObjectProperty [value: null];1
+31;Das Appartement;1961;Billy Wilder;Jack Lemmon, Shirley MacLaine;The Apartment;1960;US;125;16;Drama, Komödie;ObjectProperty [value: null];1
+32;West Side Story;1962;Jerome Robbins, Robert Wise;Natalie Wood, Tucker Smith;West Side Story;1961;US;151;12;Drama, Musikfilm;ObjectProperty [value: null];1
+33;Lawrence von Arabien;1963;David Lean;Peter O'Toole, Alec Guinness;Lawrence of Arabia;1962;GB;202;16;Drama, Historienfilm, Abenteuerfilm;ObjectProperty [value: null];1
+34;Tom Jones;1964;Tony Richardson;Albert Finney, Susannah York;Tom Jones;1963;GB;128;18;Historienfilm, Komödie, Abenteuerfilm;ObjectProperty [value: null];1
+35;My Fair Lady;1965;George Cukor;Audrey Hepburn, Rex Harrison;My Fair Lady;1964;US;173;12;Musikfilm, Drama, Komödie;ObjectProperty [value: null];1
+36;Meine Lieder, meine Träume;1966;Robert Wise;Julie Andrews, Christopher Plummer;The Sound of Music;1965;US;174;6;Drama, Musikfilm;ObjectProperty [value: null];1
+37;Ein Mann zu jeder Jahreszeit;1967;Fred Zinnemann;Paul Scofield, Wendy Hiller;A Man For All Seasons;1966;GB;120;12;Drama, Historienfilm;ObjectProperty [value: null];1
+38;In der Hitze der Nacht;1968;Norman Jewison;Sidney Poitier, Rod Steiger;In the Heat of the Night;1967;US;109;12;Kriminalfilm, Drama, Thriller;ObjectProperty [value: null];1
+39;Oliver!;1969;Carol Reed;Ron Moody, Shani Wallis;Oliver!;1968;GB;149;12;Drama, Kriminalfilm, Musikfilm;ObjectProperty [value: null];1
+40;Asphalt-Cowboy;1970;John Schlesinger;Dustin Hoffman, Jon Voight;Midnight Cowboy;1969;US;113;16;Drama;ObjectProperty [value: null];1
+41;Patton - Rebell in Uniform;1971;Franklin J. Schaffner;George C. Scott, Karl Malden;Patton;1970;US;165;12;Drama;ObjectProperty [value: null];1
+42;French Connection - Brennpunkt Brooklyn;1972;William Friedkin;Gene Hackman, Fernando Rey;The French Connection;1971;US;104;16;Actionfilm, Kriminalfilm, Drama, Thriller;ObjectProperty [value: null];1
+43;Der Pate;1973;Francis Ford Coppola;Marlon Brando, Al Pacino;The Godfather;1972;US;175;16;Drama;ObjectProperty [value: null];1
+44;Der Clou;1974;George Roy Hill;Paul Newman, Robert Redford;The Sting;1973;US;129;12;Komödie, Drama;ObjectProperty [value: null];1
+45;Der Pate 2;1975;Francis Ford Coppola;Al Pacino, Peter Donat;The Godfather: Part II;1974;US;200;16;Drama;ObjectProperty [value: null];1
+46;Einer flog über das Kuckucksnest;1976;Milos Forman;Jack Nicholson, Louise Fletcher;One Flew Over the Cuckoo's Nest;1975;US;133;18;Drama, Komödie;ObjectProperty [value: null];1
+47;Rocky;1977;John G. Avildsen;Sylvester Stallone, Talia Shire;Rocky;1976;US;118;12;Drama, Sportfilm;ObjectProperty [value: null];1
+48;Der Stadtneurotiker;1978;Woody Allen;Woody Allen, Janet Margolin;Annie Hall;1977;US;93;6;Komödie, Drama;ObjectProperty [value: null];1
+49;Die durch die Hölle gehen;1979;Michael Cimino;Robert De Niro, Christopher Walken;The Deer Hunter;1978;GB/US;183;16;Drama;ObjectProperty [value: null];1
+50;Kramer gegen Kramer;1980;Robert Benton;Dustin Hoffman, Meryl Streep;Kramer vs. Kramer;1979;US;105;16;Drama;ObjectProperty [value: null];1
+51;Eine ganz normale Familie;1981;Robert Redford;Donald Sutherland, Mary Tyler Moore;Ordinary People;1980;US;124;12;Drama;ObjectProperty [value: null];1
+52;Die Stunde des Siegers;1982;Hugh Hudson;Ben Cross, Ian Charleson;Chariots of Fire;1981;GB;123;12;Drama, Sportfilm;ObjectProperty [value: null];1
+53;Gandhi;1983;Richard Attenborough;Ben Kingsley, Rohini Hattangadi;Gandhi;1982;GB/IN;188;12;Drama, Historienfilm;ObjectProperty [value: null];1
+54;Zeit der Zärtlichkeit;1984;James L. Brooks;Shirley MacLaine, Debra Winger;Terms of Endearment;1983;US;132;12;Drama, Komödie;ObjectProperty [value: null];1
+55;Amadeus;1985;Milos Forman;F. Murray Abraham, Christine Ebersole;Amadeus;1984;US;158;12;Drama, Historienfilm, Musikfilm;ObjectProperty [value: null];1
+56;Jenseits von Afrika;1986;Sydney Pollack;Robert Redford, Meryl Streep;Out of Africa;1985;US;150;12;Drama;ObjectProperty [value: null];1
+57;Platoon;1987;Oliver Stone;Tom Berenger, Willem Dafoe;Platoon;1986;US;114;16;Drama, Actionfilm;ObjectProperty [value: null];1
+58;Der letzte Kaiser;1988;Bernardo Bertolucci;John Lone, Henry Kyi;The Last Emperor;1987;FR/GB/HK/IT/US;160;12;Drama, Historienfilm;ObjectProperty [value: null];1
+59;Rain Man;1989;Barry Levinson;Dustin Hoffman, Tom Cruise;Rain Man;1988;US;133;12;Drama, Road Movie;ObjectProperty [value: null];1
+60;Miss Daisy und ihr Chauffeur;1990;Bruce Beresford;Morgan Freeman, Jessica Tandy;Driving Miss Daisy;1989;US;99;6;Komödie, Drama;ObjectProperty [value: null];1
+61;Der mit dem Wolf tanzt;1991;Kevin Costner;Kevin Costner, Mary McDonnell;Dances with Wolves;1990;US;224;12;Abenteuerfilm, Drama, Western;ObjectProperty [value: null];1
+62;Das Schweigen der Lämmer;1992;Jonathan Demme;Jodie Foster, Anthony Hopkins;The Silence of the Lambs;1991;US;118;16;Horrorfilm, Kriminalfilm, Thriller;ObjectProperty [value: null];1
+63;Erbarmungslos;1993;Clint Eastwood;Clint Eastwood, Gene Hackman;Unforgiven;1992;US;131;16;Drama, Western;ObjectProperty [value: null];1
+64;Schindlers Liste;1994;Steven Spielberg;Liam Neeson, Ben Kingsley;Schindler's List;1993;US;186;12;Historienfilm, Drama;ObjectProperty [value: null];1
+65;Forrest Gump;1995;Robert Zemeckis;Tom Hanks, Robin Wright;Forrest Gump;1994;US;142;12;Komödie, Drama;ObjectProperty [value: null];1
+66;Braveheart;1996;Mel Gibson;Mel Gibson, Sophie Marceau;Braveheart;1995;US;171;12;Drama, Historienfilm, Actionfilm, Abenteuerfilm;ObjectProperty [value: null];1
+67;Der englische Patient;1997;Anthony Minghella;Ralph Fiennes, Juliette Binoche;The english patient;1996;GB/US;155;12;Drama;ObjectProperty [value: null];1
+68;Titanic;1998;James Cameron;Leonardo DiCaprio, Kate Winslet;Titanic;1997;US;194;12;Historienfilm, Katastrophenfilm, Drama;ObjectProperty [value: null];1
+69;Shakespeare in Love;1999;John Madden;Joseph Fiennes, Gwyneth Paltrow;Shakespeare in Love;1998;GB/US;122;6;Historienfilm, Komödie;ObjectProperty [value: null];1
+70;American Beauty;2000;Sam Mendes;Kevin Spacey, Allison Janney;American Beauty;1999;US;122;16;Drama, Komödie;ObjectProperty [value: null];1
+71;Gladiator;2001;Ridley Scott;Russell Crowe, Joaquin Phoenix;Gladiator;2000;US;154;16;Actionfilm, Drama, Historienfilm;ObjectProperty [value: null];1
+72;A Beautiful Mind - Genie und Wahnsinn;2002;Ron Howard;Russell Crowe, Jennifer Connelly;A Beautiful Mind;2001;US;134;12;Drama;ObjectProperty [value: null];1
+73;Chicago;2003;Rob Marshall;Queen Latifah, Richard Gere;Chicago;2002;CA/US;113;12;Komödie, Kriminalfilm, Musikfilm, Drama;ObjectProperty [value: null];1
+74;Der Herr der Ringe: Die Rückkehr des Königs;2004;Peter Jackson;Elijah Wood, Ian McKellen;The Lord of the Rings: The Return of the King;2003;NZ/US;200;16;Fantasyfilm, Historienfilm, Abenteuerfilm;ObjectProperty [value: null];1
+75;Million Dollar Baby;2005;Clint Eastwood;Clint Eastwood, Hilary Swank;Million Dollar Baby;2004;US;133;12;Drama, Sportfilm;ObjectProperty [value: null];1
+76;L.A. Crash;2006;Paul Haggis;Sandra Bullock, Don Cheadle;Crash;2004;US;113;12;Drama;ObjectProperty [value: null];1
+77;Departed - Unter Feinden;2007;Martin Scorsese;Leonardo DiCaprio, Matt Damon;The Departed;2006;US;155;16;Drama, Kriminalfilm, Thriller;ObjectProperty [value: null];1
+78;No Country for Old Men;2008;Ethan Coen, Joel Coen;Tommy Lee Jones, Javier Bardem;No Country for Old Men;2007;US;122;16;Kriminalfilm, Thriller, Drama, Western;ObjectProperty [value: null];1
+79;Slumdog Millionär;2009;Danny Boyle;Dev Patel, Anil Kapoor;Slumdog Millionaire;2008;GB/US;120;12;Drama;ObjectProperty [value: null];1
+80;Tödliches Kommando - The Hurt Locker;2010;Kathryn Bigelow;Jeremy Renner, Anthony Mackie;The Hurt Locker;2008;US;131;16;Drama, Thriller, Actionfilm;ObjectProperty [value: null];1
+81;The King's Speech - Die Rede des Königs;2011;Tom Hooper;Colin Firth, Geoffrey Rush;The King's Speech;2010;AU/GB;118;0;Drama, Historienfilm;ObjectProperty [value: null];1
+82;The Artist;2012;Michel Hazanavicius;Jean Dujardin, Bérénice Bejo;The Artist;2011;BE/FR;100;6;Drama, Komödie;ObjectProperty [value: null];1

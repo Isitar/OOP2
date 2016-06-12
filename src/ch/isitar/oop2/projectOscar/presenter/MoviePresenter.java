@@ -2,12 +2,17 @@ package ch.isitar.oop2.projectOscar.presenter;
 
 import java.util.Date;
 import java.util.List;
-
-import org.omg.PortableServer.ServantRetentionPolicy;
-
 import ch.isitar.oop2.projectOscar.model.*;
 import ch.isitar.oop2.projectOscar.view.*;
-import javafx.beans.property.SimpleObjectProperty;
+import ch.isitar.oop2.projectOscar.view.command.ChangeIntegerPropertyUndoRedoCommand;
+import ch.isitar.oop2.projectOscar.view.command.ChangeObjectPropertyUndoRedoCommand;
+import ch.isitar.oop2.projectOscar.view.command.ChangeStringPropertyUndoRedoCommand;
+import ch.isitar.oop2.projectOscar.view.command.CreateMovieUndoRedoCommand;
+import ch.isitar.oop2.projectOscar.view.command.DeleteMovieUndoRedoCommand;
+import ch.isitar.oop2.projectOscar.view.command.UndoRedoCommand;
+import ch.isitar.oop2.projectOscar.view.command.UndoRedoController;
+import javafx.beans.property.BooleanProperty;
+import javafx.collections.ObservableList;
 
 /**
  * the presentation model of the application
@@ -16,6 +21,8 @@ public class MoviePresenter {
 
 	private final MovieView applicationView;
 	private final MovieModel applicationModel;
+
+	private final UndoRedoController controller;
 
 	private List<Movie> movies;
 
@@ -30,6 +37,7 @@ public class MoviePresenter {
 
 		applicationModel = new MovieFileRepository();
 		movies = applicationModel.getData();
+		controller = new UndoRedoController();
 	}
 
 	public void fillView() {
@@ -45,78 +53,117 @@ public class MoviePresenter {
 		applicationView.setResults(movies);
 	}
 
-	private Movie getMovie(Movie m) {
-		return m;
-		/*
-		 * return movies.stream().filter(x -> { return x.getYearOfAward().get()
-		 * == m.getYearOfAward().get(); }).findFirst().get();
-		 */
-	}
-
 	public void ChangeYear(Movie m, int year) {
 		if (year < 1929) {
 			applicationView.DisplayError("Jahr muss ab 1929 sein.");
 		} else {
-			getMovie(m).getYearOfAward().set(year);
+			controller.ExecuteCommand(new ChangeIntegerPropertyUndoRedoCommand(m.getYearOfAward(), year));
 		}
 		setResults();
 	}
 
 	public void ChangeTitle(Movie m, String title) {
-		if (title.equals("oop2"))
+		if (title.toLowerCase().equals("oop2"))
 			applicationView.DisplayError("oop2 ist kein film sondern ein super modul !");
 		else
-			getMovie(m).getTitle().set(title);
+			controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getTitle(), title));
 		setResults();
 	}
 
 	public void ChangeDirector(Movie m, String newV) {
-		getMovie(m).getDirector().set(newV);
+		controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getDirector(), newV));
 		setResults();
 	}
 
 	public void ChangeMainActor(Movie m, String newV) {
-		getMovie(m).getMainActor().set(newV);
+		controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getMainActor(), newV));
 		setResults();
 	}
 
 	public void ChangeEnglishTitle(Movie m, String newV) {
-		getMovie(m).getTitleEnglish().set(newV);
+		controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getTitleEnglish(), newV));
 		setResults();
 	}
 
 	public void ChangeGenre(Movie m, String newV) {
-		getMovie(m).getGenre().set(newV);
+		controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getGenre(), newV));
 		setResults();
 	}
 
 	public void ChangeYearOfProduction(Movie m, int newV) {
-		getMovie(m).getYearOfProduction().set(newV);
+		controller.ExecuteCommand(new ChangeIntegerPropertyUndoRedoCommand(m.getYearOfProduction(), newV));
 		setResults();
 	}
 
 	public void ChangeCountry(Movie m, String newV) {
-		getMovie(m).getCountry().set(newV);
+		controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getCountry(), newV));
 		setResults();
 	}
 
 	public void ChangeDuration(Movie m, int newV) {
-		getMovie(m).getDuration().set(newV);
+		controller.ExecuteCommand(new ChangeIntegerPropertyUndoRedoCommand(m.getDuration(), newV));
 		setResults();
 	}
 
 	public void ChangeFSK(Movie m, int newV) {
-		getMovie(m).getFsk().set(newV);
+		controller.ExecuteCommand(new ChangeIntegerPropertyUndoRedoCommand(m.getFsk(), newV));
 		setResults();
 	}
 
 	public void ChangeNumberOfOscars(Movie m, int newV) {
-		getMovie(m).getNumberOfOscars().set(newV);
+		controller.ExecuteCommand(new ChangeIntegerPropertyUndoRedoCommand(m.getNumberOfOscars(), newV));
 		setResults();
 	}
 
 	public void ChangeCinemaStart(Movie m, Date date) {
-		getMovie(m).getStartDate().set(date);
+		controller.ExecuteCommand(new ChangeObjectPropertyUndoRedoCommand<Date>(m.getStartDate(), date));
 		setResults();
+	}
+
+	public Movie createMovie() {
+		Movie m = new Movie();
+		Movie lastMovie = movies.get(movies.size() - 1);
+		m.getYearOfAward().set(lastMovie.getYearOfAward().get() + 1);
+		m.getId().set(lastMovie.getId().get() + 1);
+		m.getNumberOfOscars().set(1);
+		m.getFsk().set(0);
+		controller.ExecuteCommand(new CreateMovieUndoRedoCommand(movies, m));
+		setResults();
+		return m;
+	}
+
+	public void deleteMovie(Movie m) {
+		controller.ExecuteCommand(new DeleteMovieUndoRedoCommand(movies, m));
+		setResults();
+	}
+
+	public void undo() {
+		controller.undo();
+		setResults();
+	}
+
+	public void redo() {
+		controller.redo();
+		setResults();
+	}
+
+	public BooleanProperty getUndoEnabledProperty() {
+		return controller.undoEnabledProperty();
+	}
+
+	public BooleanProperty getRedoEnabledProperty() {
+		return controller.redoEnabledProperty();
+	}
+
+	public ObservableList<UndoRedoCommand> getUndoListProperty() {
+		return controller.getUndoListProperty();
+	}
+
+	public ObservableList<UndoRedoCommand> getRedoListProperty() {
+		return controller.getRedoListProperty();
+	}
+
+	public void save() {
+		applicationModel.saveData(movies);
 	}
 }
