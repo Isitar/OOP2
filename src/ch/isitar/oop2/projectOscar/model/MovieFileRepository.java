@@ -21,7 +21,6 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import sun.security.x509.DeltaCRLIndicatorExtension;
 
 public class MovieFileRepository implements MovieModel {
 	private final String PATH = "movies.csv";

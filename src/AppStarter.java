@@ -9,22 +9,23 @@ import javafx.stage.Stage;
  */
 public class AppStarter extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent rootPanel = new MovieUIFX();
-        Scene scene = new Scene(rootPanel, 400, 250);
-        primaryStage.setTitle("Movies");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Parent rootPanel = new MovieUIFX();
+		Scene scene = new Scene(rootPanel, 1700, 800);
+		primaryStage.setTitle("Movies");
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
 
-    /**
-     * starts the program
-     *
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.setProperty("prism.lcdtext", "false");
-        launch(args);
-    }
+	/**
+	 * starts the program
+	 *
+	 * @param args
+	 *            the command line arguments
+	 */
+	public static void main(String[] args) {
+		System.setProperty("prism.lcdtext", "false");
+		launch(args);
+	}
 }

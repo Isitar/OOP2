@@ -15,7 +15,6 @@ import javafx.scene.layout.Priority;
 
 public class LabelPart extends GridPane {
 
-	private final int OSCARLISTSPLITPOINT = 14;
 	private Label lblYearValue = new Label();
 	private Label lblTitleValue = new Label();
 	private Label lblDirectorValue = new Label();
@@ -86,12 +85,12 @@ public class LabelPart extends GridPane {
 		oscarList.getChildren().clear();
 		Image image = new Image(getClass().getResourceAsStream("OscarResource/Oscar-logo.png"));
 
-		double fitHeight = 60;
-		double fitWidth = 30;
-
-		if (noOfOscars < OSCARLISTSPLITPOINT) {
-			fitHeight *= 2;
-			fitWidth *= 2;
+		double fitWidth = 60;
+		double fitHeight = fitWidth * 2.5333333333333333333333333333333; // scale factor
+		double widthFactor = Math.ceil(oscarList.getWidth() / noOfOscars) / (fitWidth + 5);
+		if (widthFactor < 1) {
+			fitWidth *= widthFactor;
+			fitHeight *= widthFactor;
 		}
 
 		for (int i = 0; i < noOfOscars; i++) {
