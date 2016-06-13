@@ -47,6 +47,7 @@ public class UndoRedoController {
 
 			c.execute();
 			undoList.add(c);
+			redoList.remove(c);
 		} catch (IndexOutOfBoundsException e) { // i don't care
 		}
 		updateEnabled();

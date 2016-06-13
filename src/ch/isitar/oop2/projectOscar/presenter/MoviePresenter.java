@@ -44,11 +44,6 @@ public class MoviePresenter {
 		setResults();
 	}
 
-	public boolean ChangeMovie(int id, Movie changedMovie) {
-		// movies.set(id, changedMovie);
-		return true;
-	}
-
 	private void setResults() {
 		applicationView.setResults(movies);
 	}

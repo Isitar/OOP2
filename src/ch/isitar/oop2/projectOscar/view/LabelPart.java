@@ -86,9 +86,10 @@ public class LabelPart extends GridPane {
 		Image image = new Image(getClass().getResourceAsStream("OscarResource/Oscar-logo.png"));
 
 		double fitWidth = 60;
-		double fitHeight = fitWidth * 2.5333333333333333333333333333333; // scale factor
+		double fitHeight = fitWidth * 2.5333333333333333333333333333333; // scale
+																			// factor
 		double widthFactor = Math.ceil(oscarList.getWidth() / noOfOscars) / (fitWidth + 5);
-		if (widthFactor < 1) {
+		if ((widthFactor < 1) && (widthFactor != 0)) {
 			fitWidth *= widthFactor;
 			fitHeight *= widthFactor;
 		}
