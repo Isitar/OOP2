@@ -131,6 +131,9 @@ public class MovieToolbar extends ToolBar {
 				presenter.redo();
 		});
 
+		searchField.textProperty().addListener((o, oldV, newV) -> {
+			presenter.filter(newV);
+		});
 	}
 
 	private void layoutControls() {

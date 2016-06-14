@@ -1,7 +1,10 @@
 package ch.isitar.oop2.projectOscar.presenter;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import ch.isitar.oop2.projectOscar.model.*;
 import ch.isitar.oop2.projectOscar.view.*;
 import ch.isitar.oop2.projectOscar.view.command.ChangeIntegerPropertyUndoRedoCommand;
@@ -59,7 +62,7 @@ public class MoviePresenter {
 
 	public void ChangeTitle(Movie m, String title) {
 		if (title.toLowerCase().equals("oop2"))
-			applicationView.DisplayError("oop2 ist kein film sondern ein super modul !");
+			applicationView.DisplayError("oop2 ist kein Film sondern ein super Modul!");
 		else
 			controller.ExecuteCommand(new ChangeStringPropertyUndoRedoCommand(m.getTitle(), title));
 		setResults();
@@ -160,5 +163,43 @@ public class MoviePresenter {
 
 	public void save() {
 		applicationModel.saveData(movies);
+	}
+
+	public void filter(String filterString) {
+		if (filterString.isEmpty())
+			setResults();
+		else
+			applicationView.setResults(
+					movies.parallelStream().filter(m -> LevenshteinDistance.match(m.getTitle().get(), filterString))
+							.collect(Collectors.toList()));
+
+	}
+
+	private static class LevenshteinDistance {
+		private static int minimum(int a, int b, int c) {
+			return Math.min(Math.min(a, b), c);
+		}
+
+		private static int computeLevenshteinDistance(CharSequence lhs, CharSequence rhs) {
+			int[][] distance = new int[lhs.length() + 1][rhs.length() + 1];
+
+			for (int i = 0; i <= lhs.length(); i++)
+				distance[i][0] = i;
+			for (int j = 1; j <= rhs.length(); j++)
+				distance[0][j] = j;
+
+			for (int i = 1; i <= lhs.length(); i++)
+				for (int j = 1; j <= rhs.length(); j++)
+					distance[i][j] = minimum(distance[i - 1][j] + 1, distance[i][j - 1] + 1,
+							distance[i - 1][j - 1] + ((lhs.charAt(i - 1) == rhs.charAt(j - 1)) ? 0 : 1));
+
+			return distance[lhs.length()][rhs.length()];
+		}
+
+		public static boolean match(String lhs, String rhs) {
+			double distance = computeLevenshteinDistance(lhs.toLowerCase(), rhs.toLowerCase());
+
+			return distance / lhs.length() < 0.2;
+		}
 	}
 }
